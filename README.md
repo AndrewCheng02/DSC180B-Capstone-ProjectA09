@@ -30,6 +30,7 @@ For our second quarter project, we plan to expand on findings from our first qua
 
  * To install the python packages, run the following command from the root directory of the project: `pip install -r requirements.txt`
  * Open up any of the juypter notebooks at the section you want to reproduce
+ * **When running the GNN Notebook** run the conda environment (Contains Pytorch)
 
 ## Reference
 
