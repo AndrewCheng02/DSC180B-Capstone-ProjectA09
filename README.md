@@ -9,24 +9,28 @@ For our second quarter project, we plan to expand on findings from our first qua
 ```
 |____README.md
 |____requirements.txt
-|____HCP Data.ipynb
-|____eda.ipynb
-|____sim_correlation_gen.ipynb
-|____GNN.ipynb
+|____Notebooks
+  |____HCP_Data.ipynb
+  |____Andrew_Analysis.ipynb
+  |____eda.ipynb
+  |____sim_correlation_gen.ipynb
+  |____GNN.ipynb
 |____Data
-  |____data_clean.csv
-  |____Raw_Data
-  |____Andrew_Data
+  |____data_clean.csv.gz
+  |____HCP
+  |____subject_Andrew
 ```
 
 ## Accessing and Retriving Data
 
- * Time series data is generated from the [Nilearn package](https://nilearn.github.io/stable/index.html) and all other necessary data is generated through code.
+ * Subject Data is sourced from the Human Connectome Project ([HCP](https://www.humanconnectome.org/study/hcp-young-adult)). The data is directly downloaded from their [database](https://db.humanconnectome.org/app/template/Login.vm;jsessionid=A179A9A1C462DE17533CA546A12C0485). The necessary data has already being downloaded and stored in this notebook. The HCP Notebook merges the columns of interest in the HCP raw data and generates the cleaned data for other notebooks to access.
+ * Subject Andrew, which is one of the capstone team member, underwent and fMRI brain scan at UCSD. His data was given to us from the Center for functional MRI and run through the MRI preprossing pipeline to get the raw data of the brain scan in the NIFTI 4D file format.
 
 ## Running the Project
 
  * To install the python packages, run the following command from the root directory of the project: `pip install -r requirements.txt`
  * Open up any of the juypter notebooks at the section you want to reproduce
+ * **When running the GNN Notebook** run the conda environment (Contains Pytorch)
 
 ## Reference
 
