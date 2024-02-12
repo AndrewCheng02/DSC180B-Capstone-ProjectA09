@@ -2,7 +2,7 @@ import numpy as np
 from scipy.stats import t
 from nilearn import plotting
 
-def get_tstats(group1, group2, col_name, diff_means_mat, pval=True): 
+def get_tstats(group1, group2, pval=True): 
     """
     Finds t-statistics for a two-sample t-test given the difference of means between
     group 1 and group 2 (assumes unequal variances).
@@ -10,30 +10,18 @@ def get_tstats(group1, group2, col_name, diff_means_mat, pval=True):
     * note that this is for testing many hypotheses simultaneously.
     
     args:
-        group 1 (pd.DataFrame)       - pandas DataFrame containing the sample values from group 1
-        group 2 (pd.DataFrame)       - pandas DataFrame containing the sample values from group 2
-        variable (str)               - name of column in which sample values are stored
-        diff_means_mat (2D np.array) - square symmetric ixj matrix containing difference of 
-                                        means between group 1 and group 2.
+        group 1 (arrayLike)          - sample values from group 1
+        group 2 (arrayLike)          - sample values from group 2
+
 
     returns:
-        t_stats (2D np.array) - square symmetric ixj matrix containing the t-statistic 
-                                for the given difference of means at [i, j].
+        t_stats (2D np.array) - t-statistics for the given pairwise correlations.
         g1_sqse (float)       - squared standard error of group 1
         g2_sqse (float)       - squared standard error of group 2
     """
-    # generate a matrix to store the t-statistics
-    rows, cols = diff_means_mat.shape
-    t_stats = np.zeros((rows, cols))
-
-    # get the indices of each pairwise correlation
-    # u_row_ix, u_col_ix = np.triu_indices(n=rows, k=1) # k=1 excludes diagonal values
-    u_row_ix, u_col_ix = np.triu_indices(n=3, k=1) # k=1 excludes diagonal values
-
     # calculate the t-statistic for each pairwise correlation value 
     # STEP 1: Calculate the estimated overall standard error for both groups  
-    def get_squared_se(group_df):
-        group_netmats = np.stack(group_df[col_name].to_numpy())
+    def get_squared_se(group_netmats):
         n = len(group_netmats) # sample size
         ss = lambda netmats : np.sum((netmats - np.mean(netmats, axis=0))**2, axis=0) # sum of squared difference from the mean
         var = lambda netmats: ss(netmats) / (n - 1) # variance 
@@ -45,14 +33,13 @@ def get_tstats(group1, group2, col_name, diff_means_mat, pval=True):
     overall_se = np.sqrt(g1_sqse + g2_sqse) # Estimated overall standard error
 
     # STEP 2: Calculate the t-statistic
-    t_stats = diff_means_mat / overall_se
-
-    t_stats[np.isnan(t_stats)] = 0 # set diagonal to 0
+    diff_means = np.mean(group1, axis=0) - np.mean(group2, axis=0)
+    t_stats = diff_means / overall_se
 
     # STEP 3: Get p-values (optional)
     if pval:
         dof = group1.shape[0] + group2.shape[0] # n1 + n2
-        pvals = (1 - t.cdf(np.abs(t_stats), dof))* 2 # two-sided t-test
+        pvals = t.sf(abs(t_stats), df=dof)*2 # two-sided t-test
         return t_stats, [g1_sqse, g2_sqse], pvals
 
     else:
