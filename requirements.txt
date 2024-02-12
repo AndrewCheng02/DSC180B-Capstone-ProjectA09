@@ -1,6 +1,6 @@
 numpy
 pandas
-pytorch
+torch
 nilearn
 matplotlib
-sklearn
+scikit-learn
