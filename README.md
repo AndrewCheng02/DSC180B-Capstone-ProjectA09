@@ -9,6 +9,7 @@ For our second quarter project, we plan to expand on findings from our first qua
 ```
 |____README.md
 |____requirements.txt
+|____environment.yml
 |____Notebooks
   |____Methodology
     |____GNN using simulated data.ipynb
