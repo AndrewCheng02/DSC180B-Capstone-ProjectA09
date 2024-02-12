@@ -28,7 +28,7 @@ For our second quarter project, we plan to expand on findings from our first qua
 
 ## Running the Project
 
- * Activate the **conda** environment by running the following command from the root directory of the project: `conda activate environment`
+ * Activate the **conda** environment by running the following command from the root directory of the project: `conda env create -f environment.yml`
  * If you have trouble running conda you can directly install the python packages on disk, run the following command from your command line: `pip install -r requirements.txt`
  * Open up any of the juypter notebooks at the section you want to reproduce
 
