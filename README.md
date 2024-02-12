@@ -28,10 +28,12 @@ For our second quarter project, we plan to expand on findings from our first qua
 
 ## Running the Project
 
- * To install the python packages, run the following command from the root directory of the project: `pip install -r requirements.txt`
+ * Activate the **conda** environment by running the following command from the root directory of the project: `conda activate environment`
+ * If you have trouble running conda you can directly install the python packages on disk, run the following command from your command line: `pip install -r requirements.txt`
  * Open up any of the juypter notebooks at the section you want to reproduce
- * **When running the GNN Notebook** run the conda environment (Contains Pytorch)
 
 ## Reference
 
-* [Hand Book of Functional MRI Data Analysis](https://www.cs.mtsu.edu/~xyang/fMRIHandBook.pdf)
+* [_Search for Gender Difference in Functional Connectivity of Resting State fMRI_](https://ceur-ws.org/Vol-2022/paper26.pdf)
+* [_HCP Manual_](https://humanconnectome.org/storage/app/media/documentation/s1200/HCP_S1200_Release_Reference_Manual.pdf)
+* [_Guide for GNN_](https://www.datacamp.com/tutorial/comprehensive-introduction-graph-neural-networks-gnns-tutorial)
