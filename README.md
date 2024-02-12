@@ -10,11 +10,17 @@ For our second quarter project, we plan to expand on findings from our first qua
 |____README.md
 |____requirements.txt
 |____Notebooks
-  |____HCP_Data.ipynb
-  |____Andrew_Analysis.ipynb
-  |____eda.ipynb
-  |____sim_correlation_gen.ipynb
-  |____GNN.ipynb
+  |____Methodology
+    |____GNN using simulated data.ipynb
+    |____multiple_hypothesis_bonferroni.ipynb
+    |____sim_correlation_gen.ipynb
+    |____stat_tests.py
+    |____t_test.ipynb
+  |____Application
+    |____Andrew_Analysis.ipynb
+    |____GNN.ipynb
+    |____KNN.ipynb
+    |____HCP_Data.ipynb
 |____Data
   |____data_clean.csv.gz
   |____HCP
