@@ -4,3 +4,4 @@ torch
 nilearn
 matplotlib
 scikit-learn
+notebook
