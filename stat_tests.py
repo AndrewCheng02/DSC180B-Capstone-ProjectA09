@@ -22,10 +22,10 @@ def get_tstats(group1, group2, pval=True):
     # calculate the t-statistic for each pairwise correlation value 
     # STEP 1: Calculate the estimated overall standard error for both groups  
     def get_squared_se(group_netmats):
-        n = len(group_netmats) # sample size
+        n = group_netmats.shape[0] # sample size
         ss = lambda netmats : np.sum((netmats - np.mean(netmats, axis=0))**2, axis=0) # sum of squared difference from the mean
         var = lambda netmats: ss(netmats) / (n - 1) # variance 
-        return var(group_netmats) / n
+        return var(np.stack(group_netmats)) / n
     
     g1_sqse = get_squared_se(group1) # Group 1 squared standard error
     g2_sqse = get_squared_se(group2) # Group 2 squared standard error
