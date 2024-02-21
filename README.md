@@ -33,7 +33,7 @@ For our second quarter project, we plan to expand on findings from our first qua
  * Subject Data is sourced from the Human Connectome Project ([HCP](https://www.humanconnectome.org/study/hcp-young-adult)). The data is directly downloaded from their [database](https://db.humanconnectome.org/app/template/Login.vm;jsessionid=A179A9A1C462DE17533CA546A12C0485). The necessary data has already being downloaded and stored in this notebook. The HCP Notebook merges the columns of interest in the HCP raw data and generates the cleaned data for other notebooks to access.
  * Subject Andrew, which is one of the capstone team member, underwent and fMRI brain scan at UCSD. His data was given to us from the Center for functional MRI and run through the MRI preprossing pipeline to get the raw data of the brain scan in the NIFTI 4D file format.
 
-## Running the Project
+## Running the Project (For Mac OS)
 
  * Activate the **conda** environment by running the following command from the root directory of the project: `conda env create -f environment.yml`
  * If you have trouble running conda you can directly install the python packages on disk, run the following command from your command line: `pip install -r requirements.txt`
