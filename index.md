@@ -15,3 +15,13 @@ Our research will walk through steps of statistical methods, simulation, and
 model description to achieve our task.
 
 [Code](https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09)
+[Report]()
+[Poster]()
+
+**3D Brain Simulation from subjects and what our model predicts it to be and what the actual data is**
+
+TODO: Implement
+
+**Interative Graphs for different models we made can toggle and compare different statistically methods on FMRI**
+
+TODO: Implement
