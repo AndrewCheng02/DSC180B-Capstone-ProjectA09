@@ -1,8 +1,8 @@
+# Applications of Connectivity in the Human Brain Using Functional MRI data: Classification with Graph Neural Networks
+
 | Andrew Cheng | Daphne Fabella| Terho Koivisto | Daniel Zhang | Gabriel Riegner | Armin Schwartzman |
 | ---| --- | ----| ----- | ----- | ----- |
 apcheng@ucsd.edu | dfabella@ucsd.edu | tkoivisto@ucsd.edu | yiz029@ucsd.edu| gariegner@ucsd.edu | armins@health.ucsd.edu |
- 
-## Applications of Connectivity in the Human Brain Using Functional MRI data: Classification with Graph Neural Networks
 
 **Abstract**
 
