@@ -36,7 +36,7 @@ def get_component_masker(component_vector, threshold = 0.21):
         threshold (float)        -- the cutoff that determines if the region is part of the network
     
     Returns:
-    masker of each pca component
+        masker of each pca component
     '''
     
     masker = np.copy(component_vector)
@@ -62,7 +62,7 @@ def plot_component(component_vector, masker, atlas, mean_img = None, title = "",
         threshold (float)        -- the cutoff that determines if the region is part of the network
     
     Returns:
-    plots the pca component
+        plots the pca component
     '''
 
     fig, axs = plt.subplots(1, 1, figsize = (18, 10))
