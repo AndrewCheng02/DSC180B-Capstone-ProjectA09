@@ -2,7 +2,7 @@
 
 | Andrew Cheng | Daphne Fabella| Terho Koivisto | Daniel Zhang | Gabriel Riegner | Armin Schwartzman |
 | ---| --- | ----| ----- | ----- | ----- |
-apcheng@ucsd.edu | dfabella@ucsd.edu | tkoivisto@ucsd.edu | yiz029@ucsd.edu| gariegner@ucsd.edu | armins@health.ucsd.edu |
+apcheng@ucsd.edu | dfabella@ucsd.edu | tkoivisto@ucsd.edu | yiz029@ucsd.edu| gariegner@ucsd.edu | armins@ucsd.edu |
 
 **Abstract**
 
