@@ -18,13 +18,19 @@ def get_sim_data(partial = False, fischer = False):
         List of distributions (Pandas Data Frame)
     
     '''
+    
+    def pcorr(X_corr):
+        X_inv = np.linalg.inv(X_corr)
+        X_pcorr = -X_inv / np.outer(np.sqrt(np.diag(X_inv)), np.sqrt(np.diag(X_inv)))
+        
+        return X_pcorr
 
     distributions = []
     
     # Loop through all distributions
-    for i in range(0, 11, 2):
+    for i in range(1, 11):
         
-        data_file = os.path.abspath('../../Data/sim/dist' + str(i) + '.csv.gz')
+        data_file = os.path.abspath('../../Data/sim/dist' + str(i).rjust(2, '0') + '.csv.gz')
         
         try:
             with gzip.open(data_file) as filepath:
@@ -36,7 +42,7 @@ def get_sim_data(partial = False, fischer = False):
                 data = pd.read_csv(data_file, index_col = False, converters = {'corr' : parse_net_mat})
 
                 if partial:
-                    data['corr'] = data['corr'].apply(lambda x : x.pcorr())
+                    data['corr'] = data['corr'].apply(lambda x : pcorr(x))
                     
                 if fischer:
                     data['corr'] = data['corr'].apply(lambda x : np.arctanh(x))
