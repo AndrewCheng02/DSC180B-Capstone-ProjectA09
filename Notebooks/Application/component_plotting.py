@@ -8,7 +8,8 @@ import os
 
 
 melodic_sum_file = os.path.abspath('../../Data/HCP/melodic_IC_sum.nii.gz') # Nifti 4D Data
-labels = list(range(100))
+
+labels = list(range(100)) # Labels 0-99
 
 def get_hcp_maps_masker():
     
@@ -32,6 +33,17 @@ def get_atlas():
     # Load Image
     melodic_img = image.load_img(melodic_sum_file)
     return melodic_img
+
+def get_region_coords(atlas, labels = range(100), threshold = 100):
+    
+    coords = []
+    
+    for i in labels:
+        coord = plotting.find_parcellation_cut_coords(image.binarize_img(image.index_img(atlas, i), threshold))
+        coords.append(coord)
+    
+    return coords
+        
     
 def get_component_regions(component_vector, threshold = 0.21):
     '''Gets the regions of the PCA/ICA network given the component cutoff value (Around 0.2)
