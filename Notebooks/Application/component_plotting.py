@@ -35,14 +35,11 @@ def get_atlas():
     return melodic_img
 
 def get_region_coords(atlas, labels = range(100), threshold = 100):
+
+    voxel_coords = plotting.find_probabilistic_atlas_cut_coords(atlas)
+    #world_coords = [image.coord_transform(*i, atlas.affine) for i in voxel_coords]
     
-    coords = []
-    
-    for i in labels:
-        coord = plotting.find_parcellation_cut_coords(image.binarize_img(image.index_img(atlas, i), threshold))
-        coords.append(coord)
-    
-    return coords
+    return voxel_coords
         
     
 def get_component_regions(component_vector, threshold = 0.21):
