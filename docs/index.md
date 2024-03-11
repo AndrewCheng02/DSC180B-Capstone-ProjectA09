@@ -1,10 +1,13 @@
-# Applications of Connectivity in the Human Brain Using Functional MRI data: Classification with Graph Neural Networks
+# Applications of Connectivity in the Human Brain Using Functional MRI data: Classification with Graph Neural Networks 
 
 | Andrew Cheng | Daphne Fabella| Terho Koivisto | Daniel Zhang | Gabriel Riegner | Armin Schwartzman |
 | ---| --- | ----| ----- | ----- | ----- |
 apcheng@ucsd.edu | dfabella@ucsd.edu | tkoivisto@ucsd.edu | yiz029@ucsd.edu| gariegner@ucsd.edu | armins@ucsd.edu |
 
-**Abstract**
+## Sources
+[Code](https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09)  [Report](https://www.overleaf.com/project/65c86bd071f00f87c475dce6)  [Poster](https://www.figma.com/file/2bLRnTXxhFexqB9OMKczHR/capstone-poster?type=design&node-id=2-353&mode=design&t=symcZMgYc8RZv6k8-0)
+
+## Abstract
 
 In our project, we implement a neural network-based application to discern
 gender difference from functional magnetic resonance imaging (fMRI) resting
@@ -14,11 +17,7 @@ of the DMN, it proves to be a key differentiator for the classification problem.
 Our research will walk through steps of statistical methods, simulation, and
 model description to achieve our task.
 
-[Code](https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09)
-[Report](https://www.overleaf.com/project/65c86bd071f00f87c475dce6)
-[Poster](https://www.figma.com/file/2bLRnTXxhFexqB9OMKczHR/capstone-poster?type=design&node-id=2-353&mode=design&t=symcZMgYc8RZv6k8-0)
-
-**Introduction**
+## Introduction
 
 Functional magnetic resonance imaging still proves to be a key tool to deciphering the mysterious architecture of the brain after its first uses in the early nineties. Due to the high spatial resolution (in millimeters) and relative ease of getting a scan, data for fMRI scans has become highly available and useful. These scans still lack temporal resolution due to how fMRI blood-oxygen-level-dependent (BOLD) signals work, where it is the blood flow that is being measured rather than the signals in the brain. This will make our temporal resolution in seconds rather than some other scanning methods (e.g. MEG, EEG, NIRS)  that are in milliseconds. Understanding and simulating fMRI data is crucial for understanding the connectivity of the brain.
 
@@ -28,7 +27,7 @@ We are not the only ones to be interested in the differences of fMRI data in res
 
 For our neural network based classifier, we must explain some important considerations. For data pre-processing we explain changes we might need to make to data. Simulate an environment to prove the classification is practicable from correlation data. Finally explain our exploratory data analysis to display significant differences in the data between genders.
 
-**3D Brain Simulation from subjects and what our model predicts it to be and what the actual data is**
+## 3D Brain Simulation from subjects and what our model predicts it to be and what the actual data is
 
 TODO: Implement
 
