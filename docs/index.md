@@ -6,7 +6,7 @@ apcheng@ucsd.edu | dfabella@ucsd.edu | tkoivisto@ucsd.edu | yiz029@ucsd.edu| gar
 
 ## Sources
 [Code](https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09)  
-[Report](https://www.overleaf.com/project/65c86bd071f00f87c475dce6)  
+[Report](./capstone_report.pdf)
 [Poster](./capstone_poster.pdf)
 
 ## Abstract
