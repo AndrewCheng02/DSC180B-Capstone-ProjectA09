@@ -5,7 +5,9 @@
 apcheng@ucsd.edu | dfabella@ucsd.edu | tkoivisto@ucsd.edu | yiz029@ucsd.edu| gariegner@ucsd.edu | armins@ucsd.edu |
 
 ## Sources
-[Code](https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09)  [Report](https://www.overleaf.com/project/65c86bd071f00f87c475dce6)  [Poster](https://www.figma.com/file/2bLRnTXxhFexqB9OMKczHR/capstone-poster?type=design&node-id=2-353&mode=design&t=symcZMgYc8RZv6k8-0)
+[Code](https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09)  
+[Report](https://www.overleaf.com/project/65c86bd071f00f87c475dce6)  
+[Poster](file:///www/capstone_poster.pdf)
 
 ## Abstract
 
@@ -27,10 +29,6 @@ We are not the only ones to be interested in the differences of fMRI data in res
 
 For our neural network based classifier, we must explain some important considerations. For data pre-processing we explain changes we might need to make to data. Simulate an environment to prove the classification is practicable from correlation data. Finally explain our exploratory data analysis to display significant differences in the data between genders.
 
-## 3D Brain Simulation from subjects and what our model predicts it to be and what the actual data is
+## Connectome Figures
 
-TODO: Implement
-
-**Interative Graphs for different models we made can toggle and compare different statistically methods on FMRI**
-
-TODO: Implement
+- Add Plotting
