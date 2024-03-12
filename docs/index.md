@@ -5,7 +5,8 @@
 apcheng@ucsd.edu | dfabella@ucsd.edu | tkoivisto@ucsd.edu | yiz029@ucsd.edu| gariegner@ucsd.edu | armins@ucsd.edu |
 
 ## Sources
-[Code](https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09)  
+[![Code](<img src=docs/icons/programming.png alt="Code" width="15"/>)](https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09)
+[Code](https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09)
 [Report](./capstone_report.pdf)
 [Poster](./capstone_poster.pdf)
 
