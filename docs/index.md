@@ -58,19 +58,25 @@ The input to our Graph Neural Network (GNN) consists of pre-processed ICA compon
 
 <img src=/docs/images/GNN_structure.png width=700mm height=500mm> 
 
+**Figure 1.**
 *The GNN processes the graph data for each subject iteratively examining the relations of neighboring significantly connected components to a specific component in the graph. By running the network by subject, over time it will recognize important indicators in the structure found by edges as well as correlation weights on specific components. It summarizes these relationships and updates the state of each component per subject iteratively using GNN operations. The process is repeated until the network achieves satisfactory accuracy on both the training and validation sets. GNNs leverage parallel computing methods, making them suitable for efficient training on cloud computing platforms. Despite this, most of our training has run on memory of a personal computer.*
 
 ## GNN Architecture
 
 <img src=/docs/images/GNN_architecture.png width=800mm height=400mm>
 
+**Figure 2.**
 *From empirical findings of running with different hyperparameters, general rules of thumb for neural networks have been useful. This mainly includes having a tuned learning rate, using activation functions on each hidden layer, changing the shape of the data to a higher dimension then reducing the dimension to, and finally having a linear layer before output. Some changes from usual neural networks are using the tanh activation function since our data needs to be analyzed for positive and negative correlation values. Utilizing batchnorm on each hidden layer proved to be useful, which was inspired from a paper with a similar task. Article by **Hough_2022** describes the usefulness of batchnorm which is most likely due to its benefits to accelerate training per epochs. Overall there is no single architecture that will work for any given task. As tested by using same architecture on simulated fMRI data vs. real fMRI data, the results vary.*
 
 ## Results
 
-| <img src=/docs/images/performance_graph.png width=450mm height=400mm> | <img src=/docs/images/performance_table.png width=500mm height=400mm> 
+|<img src=/docs/images/performance_graph.png width=450mm height=400mm>|<img src=/docs/images/performance_table.png width=500mm height=400mm>|
+|:--:|:--:| 
+| **Figure 3. GNN vs. K-NN: Classification task performance on Separable (Simulated) Data.** There is a positive relationship between accuracy and separability of groups for both models. | **Figure 4. GNN vs. KNN: Classification task performances on HCP Data.** The GNN on thresholded edges had the highest performance at 86.00% accuracy.|
 
-| <img src=/docs/images/accuracy_graph.png width=450mm height=400mm> | <img src=/docs/images/truth_table.png width=450mm height=400mm> |
+|<img src=/docs/images/accuracy_graph.png width=450mm height=400mm>|<img src=/docs/images/truth_table.png width=450mm height=400mm>|
+|:--:|:--:|
+| **Figure 5. GNN Thresholded Edges accuracy per epoch. Monotonic increase of accuracy over epochs indicates effective classification-task performance.**| **Figure 6. GNN Thresholded Edges confusion table.** F1-score of 0.73. The model performed generally better at predicting males than females when given the validation dataset.|
 
 ## Connectome Figures
 
