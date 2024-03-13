@@ -54,11 +54,17 @@ the functional connectivity of the male brain and the female brain.
 
 The input to our Graph Neural Network (GNN) consists of pre-processed ICA components provided by the previously discussed HCP fMRI data releases for 1,003 young adults. Each subject is associated with metadata including age range and gender. Gender information is extracted and used as a label for our classification task. From this data, meaningful edges are extracted through EDA significant edges, indicating important connections between components for distinguishing gender within the graph.
 
-The GNN processes the graph data for each subject iteratively examining the relations of neighboring significantly connected components to a specific component in the graph. By running the network by subject, over time it will recognize important indicators in the structure found by edges as well as correlation weights on specific components. It summarizes these relationships and updates the state of each component per subject iteratively using GNN operations. The process is repeated until the network achieves satisfactory accuracy on both the training and validation sets. GNNs leverage parallel computing methods, making them suitable for efficient training on cloud computing platforms. Despite this, most of our training has run on memory of a personal computer.
+## GNN Structure
 
-## GNN Structure and Architecture
+<img src=/docs/images/GNN_structure.png width=700mm height=500mm> 
 
-<img src=/docs/images/GNN_structure.png width=700mm height=500mm> <img src=/docs/images/GNN_architecture.png width=800mm height=400mm>
+*The GNN processes the graph data for each subject iteratively examining the relations of neighboring significantly connected components to a specific component in the graph. By running the network by subject, over time it will recognize important indicators in the structure found by edges as well as correlation weights on specific components. It summarizes these relationships and updates the state of each component per subject iteratively using GNN operations. The process is repeated until the network achieves satisfactory accuracy on both the training and validation sets. GNNs leverage parallel computing methods, making them suitable for efficient training on cloud computing platforms. Despite this, most of our training has run on memory of a personal computer.*
+
+## GNN Architecture
+
+<img src=/docs/images/GNN_architecture.png width=800mm height=400mm>
+
+*From empirical findings of running with different hyperparameters, general rules of thumb for neural networks have been useful. This mainly includes having a tuned learning rate, using activation functions on each hidden layer, changing the shape of the data to a higher dimension then reducing the dimension to, and finally having a linear layer before output. Some changes from usual neural networks are using the tanh activation function since our data needs to be analyzed for positive and negative correlation values. Utilizing batchnorm on each hidden layer proved to be useful, which was inspired from a paper with a similar task. Article by **Hough_2022** describes the usefulness of batchnorm which is most likely due to its benefits to accelerate training per epochs. Overall there is no single architecture that will work for any given task. As tested by using same architecture on simulated fMRI data vs. real fMRI data, the results vary.*
 
 ## Results
 
