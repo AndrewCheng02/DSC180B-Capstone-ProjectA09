@@ -68,6 +68,9 @@ The input to our Graph Neural Network (GNN) consists of pre-processed ICA compon
 
 ## Results
 
+| <img src=/docs/images/performance_graph.png width=450mm height=400mm> | <img src=/docs/images/performance_table.png width=500mm height=400mm> 
+
+| <img src=/docs/images/accuracy_graph.png width=450mm height=400mm> | <img src=/docs/images/truth_table.png width=450mm height=400mm> |
 
 ## Connectome Figures
 
