@@ -52,6 +52,15 @@ the functional connectivity of the male brain and the female brain.
 
 ## Graph Neural Network (GNN)
 
+The input to our Graph Neural Network (GNN) consists of pre-processed ICA components provided by the previously discussed HCP fMRI data releases for 1,003 young adults. Each subject is associated with metadata including age range and gender. Gender information is extracted and used as a label for our classification task. From this data, meaningful edges are extracted through EDA significant edges, indicating important connections between components for distinguishing gender within the graph.
+
+The GNN processes the graph data for each subject iteratively examining the relations of neighboring significantly connected components to a specific component in the graph. By running the network by subject, over time it will recognize important indicators in the structure found by edges as well as correlation weights on specific components. It summarizes these relationships and updates the state of each component per subject iteratively using GNN operations. The process is repeated until the network achieves satisfactory accuracy on both the training and validation sets. GNNs leverage parallel computing methods, making them suitable for efficient training on cloud computing platforms. Despite this, most of our training has run on memory of a personal computer.
+
+## GNN Structure
+
+## GNN Architecture
+
+## Results
 
 
 ## Connectome Figures
