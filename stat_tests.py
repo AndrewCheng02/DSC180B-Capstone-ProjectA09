@@ -2,6 +2,23 @@ import numpy as np
 from scipy.stats import t
 from nilearn import plotting
 
+def set_upper_triangular(symmetric_matrix):
+    '''returns only the upper triangular values of a symmetric matrix'''
+    num_pairwise = symmetric_matrix.shape[0]
+    no_diagonal = 1
+
+    new_matrix = symmetric_matrix.copy()
+    new_matrix[np.tril_indices(n=num_pairwise, k=no_diagonal)] = 0
+    return new_matrix
+
+def get_upper_triangular(symmetric_matrix):
+    """
+    Returns only the upper triangular values of a symmetric matrix
+    """
+    num_pairwise = symmetric_matrix.shape[0]
+    no_diagonal = 1
+    return symmetric_matrix[np.triu_indices(n=num_pairwise, k=no_diagonal)]
+
 def get_tstats(group1, group2, pval=True): 
     """
     Finds t-statistics for a two-sample t-test given the difference of means between
@@ -45,7 +62,7 @@ def get_tstats(group1, group2, pval=True):
     else:
         return t_stats, [g1_sqse, g2_sqse]
     
-def get_sig_regions(regions, p_values, alpha, title="Statistically Signficant Pairwise Correlations Between Males and Females"):    
+def get_sig_regions(regions, p_values, alpha, title="Statistically Signficant Pairwise Correlations Between Males and Females",cmap='hot_black_bone_r'):    
     """
     Returns a matrix of statistically significant values.
 
@@ -69,6 +86,6 @@ def get_sig_regions(regions, p_values, alpha, title="Statistically Signficant Pa
     vmin = values_mean - 3 * values_sd
 
     plotting.plot_matrix(
-        significant_regions, colorbar=True, vmax=vmax, vmin=vmin, title=title)
+        set_upper_triangular(significant_regions), colorbar=True, vmax=vmax, vmin=vmin, title=title, cmap=cmap)
     
     return significant_regions
