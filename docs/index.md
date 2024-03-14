@@ -81,4 +81,4 @@ The input to our Graph Neural Network (GNN) consists of pre-processed ICA compon
 
 ## Connectome Figures
 
-<iframe src="https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09/docs/html/andrew_view.html" width="100%" height="300px"></iframe>
+<iframe src="https://htmlpreview.github.io/?https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09/blob/main/docs/html/andrew_view.html" width="100%" height="300px"></iframe>
