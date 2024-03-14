@@ -63,7 +63,7 @@ The input to our Graph Neural Network (GNN) consists of pre-processed ICA compon
 
 ## GNN Architecture
 
-<img src=/docs/images/GNN_architecture.png width=800mm height=400mm>
+<img src=![Alt text](/docs/images/GNN_architecture.png) width=800mm height=400mm>
 
 **Figure 2.**
 *From empirical findings of running with different hyperparameters, general rules of thumb for neural networks have been useful. This mainly includes having a tuned learning rate, using activation functions on each hidden layer, changing the shape of the data to a higher dimension then reducing the dimension to, and finally having a linear layer before output. Some changes from usual neural networks are using the tanh activation function since our data needs to be analyzed for positive and negative correlation values. Utilizing batchnorm on each hidden layer proved to be useful, which was inspired from a paper with a similar task. Article by **Hough_2022** describes the usefulness of batchnorm which is most likely due to its benefits to accelerate training per epochs. Overall there is no single architecture that will work for any given task. As tested by using same architecture on simulated fMRI data vs. real fMRI data, the results vary.*
@@ -80,4 +80,4 @@ The input to our Graph Neural Network (GNN) consists of pre-processed ICA compon
 
 ## Connectome Figures
 
-- Add Plotting
+<iframe src="/docs/html/andrew_view.html" width="100%" height="300px"></iframe>
