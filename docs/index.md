@@ -6,7 +6,7 @@ apcheng@ucsd.edu | dfabella@ucsd.edu | tkoivisto@ucsd.edu | yiz029@ucsd.edu| gar
 
 ## Sources
 
-|[<img src=/icons/programming.png width=50mm height=50mm>](https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09)| [<img src=/icons/report.png width=50mm height=50mm>](./capstone_report.pdf) | [<img src=/icons/announcement.png width=50mm height=50mm>](./capstone_poster.pdf) |
+|[<img src=https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09/blob/main/docs/icons/programming.png width=50mm height=50mm>](https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09)| [<img src=https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09/blob/main/docs/icons/report.png width=50mm height=50mm>](./capstone_report.pdf) | [<img src=https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09/blob/main/docs/icons/announcement.png width=50mm height=50mm>](./capstone_poster.pdf) |
 |:--:|:--:|:--:| 
 | [*Code*](https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09) | [*Report*](./capstone_report.pdf) | [*Report*](./capstone_poster.pdf) |
 
