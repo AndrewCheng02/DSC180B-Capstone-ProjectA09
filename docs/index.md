@@ -87,9 +87,9 @@ One of our very own group members decided to be put into the MRI closet and be t
 
 We get this connectome plot of their brain (Each line represents a connection in the brain network) and along side it we have a the average HCP connectomes for male and females.
 
-|:--:|:--:| 
-| <iframe src="./html/andrew_view.html" width=500mm height=500mm></iframe> | <iframe src="./html/male_view.html" width=500mm height=500mm></iframe> | <iframe src="./html/female_view.html" width=500mm height=500mm></iframe> |
-|:--:|:--:| 
+<iframe src="./html/andrew_view.html" width=500mm height=500mm></iframe>
+<iframe src="./html/male_view.html" width=500mm height=500mm></iframe>
+<iframe src="./html/female_view.html" width=500mm height=500mm></iframe>
 
 Can you spot the difference and predict if our group member is male and female??
 
