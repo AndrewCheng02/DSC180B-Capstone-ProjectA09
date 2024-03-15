@@ -13,15 +13,24 @@ For our second quarter project, we plan to expand on findings from our first qua
 |____Notebooks
   |____Methodology
     |____GNN using simulated data.ipynb
+    |____GNN_newsims.ipynb
+    |____KKN Simulated Data.ipynb
     |____multiple_hypothesis_bonferroni.ipynb
     |____sim_correlation_gen.ipynb
     |____stat_tests.py
     |____t_test.ipynb
+    |____sim_data.py
+    |____retrieve_sim.py
   |____Application
     |____Andrew_Analysis.ipynb
     |____GNN.ipynb
     |____KNN.ipynb
     |____HCP_Data.ipynb
+    |____HCP_EDA.ipynb
+    |____HCP_GNN_sigedges.ipynb
+    |____component_plotting.py
+    |____hcp_data.py
+    |____stat_tests.py
 |____Data
   |____data_clean.csv.gz
   |____HCP
