@@ -1,5 +1,3 @@
-<link rel="stylesheet" type="text/css" href="styles.css">
-
 # Applications of Connectivity in the Human Brain Using Functional MRI data: Classification with Graph Neural Networks 
 
 | Andrew Cheng | Daphne Fabella| Terho Koivisto | Daniel Zhang | Gabriel Riegner | Armin Schwartzman |
