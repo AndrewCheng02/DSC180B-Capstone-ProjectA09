@@ -69,7 +69,7 @@ The input to our Graph Neural Network (GNN) consists of pre-processed ICA compon
 
 ## Results
 
-|<img src="./images/performance_graph.png" width=450mm height=400mm>|<img src="./images/performance_table.png" width=500mm height=400mm>|
+|<img src="./images/performance_graph.png" width=425mm height=400mm>|<img src="./images/performance_table.png" width=500mm height=400mm>|
 |:--:|:--:| 
 | **Figure 3. GNN vs. K-NN: Classification task performance on Separable (Simulated) Data.** There is a positive relationship between accuracy and separability of groups for both models. | **Figure 4. GNN vs. KNN: Classification task performances on HCP Data.** The GNN on thresholded edges had the highest performance at 86.00% accuracy.|
 
