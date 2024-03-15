@@ -8,7 +8,7 @@ apcheng@ucsd.edu | dfabella@ucsd.edu | tkoivisto@ucsd.edu | yiz029@ucsd.edu| gar
 
 ## Sources
 
-|[<img alt="icon" src="https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09/blob/main/docs/icons/programming.png" width=50mm height=50mm>](https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09)| [<img alt="icon" src="https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09/blob/main/docs/icons/report.png" width=50mm height=50mm>](./capstone_report.pdf) | [<img alt="icon" src="https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09/blob/main/docs/icons/announcement.png" width=50mm height=50mm>](./capstone_poster.pdf) |
+|[<img alt="icon" src="./icons/programming.png" width=50mm height=50mm>](https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09)| [<img alt="icon" src="./icons/report.png" width=50mm height=50mm>](./capstone_report.pdf) | [<img alt="icon" src="./icons/announcement.png" width=50mm height=50mm>](./capstone_poster.pdf) |
 |:--:|:--:|:--:| 
 | [*Code*](https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09) | [*Report*](./capstone_report.pdf) | [*Report*](./capstone_poster.pdf) |
 
@@ -71,14 +71,14 @@ The input to our Graph Neural Network (GNN) consists of pre-processed ICA compon
 
 ## Results
 
-|<img src="https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09/blob/main/docs/images/performance_graph.png" width=450mm height=400mm>|<img src="https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09/blob/main/docs/images/performance_table.png" width=500mm height=400mm>|
+|<img src="./images/performance_graph.png" width=450mm height=400mm>|<img src="./images/performance_table.png" width=500mm height=400mm>|
 |:--:|:--:| 
 | **Figure 3. GNN vs. K-NN: Classification task performance on Separable (Simulated) Data.** There is a positive relationship between accuracy and separability of groups for both models. | **Figure 4. GNN vs. KNN: Classification task performances on HCP Data.** The GNN on thresholded edges had the highest performance at 86.00% accuracy.|
 
-|<img src="https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09/blob/main/docs/images/accuracy_graph.png" width=450mm height=400mm> |<img src="https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09/blob/main/docs/images/truth_table.png" width=450mm height=400mm>|
+|<img src="./images/accuracy_graph.png" width=450mm height=400mm> |<img src="./images/truth_table.png" width=450mm height=400mm>|
 |:--:|:--:|
 | **Figure 5. GNN Thresholded Edges accuracy per epoch. Monotonic increase of accuracy over epochs indicates effective classification-task performance.** | **Figure 6. GNN Thresholded Edges confusion table.** F1-score of 0.73. The model performed generally better at predicting males than females when given the validation dataset.|
 
 ## Connectome Figures
 
-<iframe src="https://htmlpreview.github.io/?https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09/blob/main/docs/html/andrew_view.html" width="100%" height="300px"></iframe>
+<iframe src="https://htmlpreview.github.io/?./html/andrew_view.html" width="100%" height="300px"></iframe>
