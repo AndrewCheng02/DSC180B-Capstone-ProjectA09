@@ -79,4 +79,4 @@ The input to our Graph Neural Network (GNN) consists of pre-processed ICA compon
 
 ## Connectome Figures
 
-<iframe src="./html/andrew_view.html"></iframe>
+<iframe src="./html/andrew_view.html" width=500mm height=500mm></iframe>
