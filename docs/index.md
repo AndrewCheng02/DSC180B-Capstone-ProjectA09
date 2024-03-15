@@ -12,7 +12,7 @@ apcheng@ucsd.edu | dfabella@ucsd.edu | tkoivisto@ucsd.edu | yiz029@ucsd.edu| gar
 
 ## Abstract
 
-In our project, we implement a neural network-based application to discern gender difference from functional magnetic resonance imaging (fMRI) resting state data. An important region that activates while the brain is at rest is the default mode network (DMN). While we don’t directly measure the activation of the DMN, it proves to be a key differentiator for the classification problem. Our research will walk through steps of statistical methods, simulation, and model description to achieve our task.
+In our project, we developed classification models to discern gender difference from functional magnetic resonance imaging (fMRI) to examine the applicability of Graph Neural Networks (GNN) on resting state fMRI. By exploring brain network differences and use of data simulation with controllable parameters, we constructed a neural network classifier utilizing graph structure alongside a simple baseline model. The results show the two classes are separable when only comparing fMRI resting state data. Our research will walk through steps of statistical methods, simulation, and model description to accomplish our objective.
 
 ## Introduction
 
