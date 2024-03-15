@@ -57,7 +57,7 @@ The input to our Graph Neural Network (GNN) consists of pre-processed ICA compon
 
 ## GNN Structure
 
-<img src=/docs/images/GNN_structure.png width=700mm height=500mm> 
+<img src=./images/GNN_structure.png width=700mm height=500mm> 
 
 **Figure 1.**
 *The GNN processes the graph data for each subject iteratively examining the relations of neighboring significantly connected components to a specific component in the graph. By running the network by subject, over time it will recognize important indicators in the structure found by edges as well as correlation weights on specific components. It summarizes these relationships and updates the state of each component per subject iteratively using GNN operations. The process is repeated until the network achieves satisfactory accuracy on both the training and validation sets. GNNs leverage parallel computing methods, making them suitable for efficient training on cloud computing platforms. Despite this, most of our training has run on memory of a personal computer.*
@@ -81,4 +81,4 @@ The input to our Graph Neural Network (GNN) consists of pre-processed ICA compon
 
 ## Connectome Figures
 
-<iframe src="https://htmlpreview.github.io/?./html/andrew_view.html" width="100%" height="300px"></iframe>
+<iframe src="https://htmlpreview.github.io/?https://github.com/AndrewCheng02/DSC180B-Capstone-ProjectA09/blob/main/docs/html/andrew_view.html" width="100%" height="300px"></iframe>
