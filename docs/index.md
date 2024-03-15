@@ -20,7 +20,7 @@ Functional magnetic resonance imaging still proves to be a key tool to decipheri
 
 Our project will focus on data from the Human Connectome Project (HCP) Young Adult data release, which has a collection of 1,200 fMRI scanned adult brains. The data is in the form of voxels, which are pixels that exist in a three-dimensional space of a brain mapping to an intensity of a BOLD signal at a specific point in time. With the amount of different brains, it would be impossible to map one to one comparisons between specific voxel locations in the brain. So we use pre-processed data that shrinks the number of subjects to 1,003 subjects. We will later discuss the data in more detail. 
 
-We are not the only ones to be interested in the differences of fMRI data in resting state between genders. A study by \cite{Sie2019-np} investigated age and gender differences in resting state functional connectivity. They found during rest females will have stronger correlations in the DMN than their male counterparts. While these differences were shown to wear off with age, this still proves there exist possible indicators to be found in fMRI data.
+We are not the only ones to be interested in the differences of fMRI data in resting state between genders. A study by [Sie 2019](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6811649/) investigated age and gender differences in resting state functional connectivity. They found during rest females will have stronger correlations in the DMN than their male counterparts. While these differences were shown to wear off with age, this still proves there exist possible indicators to be found in fMRI data.
 
 For our neural network based classifier, we must explain some important considerations. For data pre-processing we explain changes we might need to make to data. Simulate an environment to prove the classification is practicable from correlation data. Finally explain our exploratory data analysis to display significant differences in the data between genders.
 
@@ -81,8 +81,20 @@ These are the results of our findings. We decided to use KNN as a baseline class
 
 ## Testing!
 
-One of our very own group members decided to be put into the MRI closet and tested on our very own model! >:)
+One of our very own group members decided to be put into the MRI closet and be tested on our very own model! >:)
+
+<img src="./images/Andrew_fMRI.png" width=425mm height=400mm> <-- Sent to the Shadow Realm
+
+We get this connectome plot of their brain (Each line represents a connection in the brain network) and along side it we have a the average HCP connectomes for male and females.
+
+|:--:|:--:| 
+| <iframe src="./html/andrew_view.html" width=500mm height=500mm></iframe> | <iframe src="./html/male_view.html" width=500mm height=500mm></iframe> | <iframe src="./html/female_view.html" width=500mm height=500mm></iframe> |
+|:--:|:--:| 
+
+Can you spot the difference and predict if our group member is male and female??
+
+- Add button
+
+Woahh it's Andrew and guess what our GNN predicted correctly that he's male!! Woohoo
 
 
-
-<iframe src="./html/andrew_view.html" width=500mm height=500mm></iframe>
