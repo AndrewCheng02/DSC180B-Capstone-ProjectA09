@@ -26,6 +26,13 @@ For our second quarter project, we plan to expand on findings from our first qua
   |____data_clean.csv.gz
   |____HCP
   |____subject_Andrew
+|____docs
+  |____index.md
+  |____icons
+  |____images
+  |____html
+  |____report.pdf
+  |____poster.pdf
 ```
 
 ## Accessing and Retriving Data
