@@ -69,6 +69,8 @@ The input to our Graph Neural Network (GNN) consists of pre-processed ICA compon
 
 ## Results
 
+These are the results of our findings. We decided to use KNN as a baseline classifier. Due to the limited amount of data it would be easy to assume that KNN would perform better since it works well with less data versus a GNN that needs lots of data to train its hyper parameters. As the amount of fMRI data becomes more and more accessible we assume that the GNN will out perform the KNN not only in accuracy but computationally in speed. As the amount the of data points increases the KNN algorithm becomes slower whereas the GNN becomes more accurate.
+
 |<img src="./images/performance_graph.png" width=425mm height=400mm>|<img src="./images/performance_table.png" width=500mm height=400mm>|
 |:--:|:--:| 
 | **Figure 3. GNN vs. K-NN: Classification task performance on Separable (Simulated) Data.** There is a positive relationship between accuracy and separability of groups for both models. | **Figure 4. GNN vs. KNN: Classification task performances on HCP Data.** The GNN on thresholded edges had the highest performance at 86.00% accuracy.|
@@ -77,6 +79,10 @@ The input to our Graph Neural Network (GNN) consists of pre-processed ICA compon
 |:--:|:--:|
 | **Figure 5. GNN Thresholded Edges accuracy per epoch. Monotonic increase of accuracy over epochs indicates effective classification-task performance.** | **Figure 6. GNN Thresholded Edges confusion table.** F1-score of 0.73. The model performed generally better at predicting males than females when given the validation dataset.|
 
-## Connectome Figures
+## Testing!
+
+One of our very own group members decided to be put into the MRI closet and tested on our very own model! >:)
+
+
 
 <iframe src="./html/andrew_view.html" width=500mm height=500mm></iframe>
